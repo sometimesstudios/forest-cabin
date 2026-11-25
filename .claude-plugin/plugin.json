@@ -1,10 +1,20 @@
 {
   "name": "forest-cabin",
-  "version": "0.1.1",
-  "description": "A cozy forest-cabin theme for the Claude Code desktop app: wood-toned colors, an animated night-forest backdrop with two little coders (one at a cabin window, one by the campfire), and an optional campfire ambience.",
-  "author": { "name": "sometimesstudios" },
+  "version": "0.2.0",
+  "description": "A cozy forest-cabin theme for the Claude Code desktop app: wood-toned colors and an animated night-forest backdrop of two remote workers, one at a lit cabin window and one by a campfire, with an optional campfire ambience.",
+  "author": {
+    "name": "sometimesstudios"
+  },
   "homepage": "https://github.com/sometimesstudios/forest-cabin",
   "repository": "https://github.com/sometimesstudios/forest-cabin",
   "license": "MIT",
-  "keywords": ["mods", "theme", "backdrop", "desktop", "cozy", "forest", "campfire"]
+  "keywords": [
+    "mods",
+    "theme",
+    "backdrop",
+    "desktop",
+    "cozy",
+    "forest",
+    "campfire"
+  ]
 }

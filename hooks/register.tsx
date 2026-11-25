@@ -75,6 +75,6 @@ export const register: Register = on => {
 
     const { Svg } = $.ui.resolve(e)
 
-    return <Svg source={SCENE} alt="밤의 소나무 숲. 왼쪽 오두막 창가에서 헤드폰 쓴 사람이 노트북으로 코딩하고, 오른쪽 모닥불 옆 통나무에 비니 쓴 캠퍼가 노트북을 무릎에 올려 코딩한다. 반딧불이와 초승달." isInteractive />
+    return <Svg source={SCENE} alt="밤의 소나무 숲. 왼쪽 오두막의 큰 창 안에서 머리를 틀어 올린 여자가 한 손으로 턱을 괴고 다른 손으로 노트북을 치며 일하고, 벽에는 메모지가, 책상 위에는 잠든 고양이가 있다. 오른쪽 전구 줄 아래 모닥불 옆 통나무에 비니 쓴 남자가 무릎 위 노트북에 집중해 일하고, 옆에는 펼친 노트와 펜, 불 옆에는 잠든 강아지, 뒤에는 불빛이 새어 나오는 텐트가 있다." isInteractive />
   })
 }
