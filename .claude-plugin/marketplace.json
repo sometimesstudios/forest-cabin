@@ -1,0 +1,14 @@
+{
+  "name": "forest-cabin",
+  "owner": {
+    "name": "sometimesstudios"
+  },
+  "description": "Forest Cabin: a cozy forest-cabin theme mod for the Claude Code desktop app.",
+  "plugins": [
+    {
+      "name": "forest-cabin",
+      "source": "./",
+      "description": "A cozy forest-cabin theme for the Claude Code desktop app, with an animated night-forest backdrop."
+    }
+  ]
+}
