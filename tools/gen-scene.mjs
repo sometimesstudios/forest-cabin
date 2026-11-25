@@ -84,7 +84,7 @@ for (let i = 0; i < 16; i++) {
 
 // Cabin and campfire, pinned to the bottom-left corner.
 const cabin = `
-<g transform="translate(0 580)">
+<g transform="translate(235 637) scale(0.85)">
   <!-- window light on the ground -->
   <ellipse cx="140" cy="400" rx="120" ry="18" fill="url(#fireGround)" class="ground-glow"/>
   <!-- chimney smoke -->
@@ -147,13 +147,15 @@ const cabin = `
 
 // Campsite in the bottom-right corner: a tent, the fire, someone on a log with a laptop.
 const camp = `
-<g transform="translate(1110 619) scale(0.9)">
+<g transform="translate(1149 619) scale(0.9)">
   <ellipse cx="270" cy="392" rx="230" ry="44" fill="url(#fireGround)" class="ground-glow"/>
-  <!-- tent, lit from inside -->
+  <!-- tent, lit from inside, set back behind the fire -->
+  <g transform="translate(150 70) scale(0.8)">
   <path d="M30 392L130 236L230 392Z" class="tent"/>
   <path d="M130 236L104 392H156Z" class="tent-in"/>
   <path d="M130 236L84 392H104Z" class="tent-flap"/>
   <path d="M130 236L122 226M130 236L138 226" class="rope"/>
+  </g>
   <!-- campfire -->
   <g transform="translate(290 392)">
     <circle cx="0" cy="-24" r="70" fill="url(#fireHalo)" class="halo"/>
@@ -216,7 +218,7 @@ const camp = `
 
 // Moon, pinned to the top-right corner.
 const moon = `
-<g transform="translate(1180 10)">
+<g transform="translate(1150 180)">
   <circle cx="300" cy="110" r="90" fill="url(#moonHalo)"/>
   <circle cx="300" cy="110" r="34" class="moon" mask="url(#crescent)"/>
 </g>`
@@ -302,7 +304,7 @@ const style = `
 @media (prefers-reduced-motion: reduce){*{animation:none!important}}
 `
 
-const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid slice">
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMax slice">
 <defs>
 <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="sky-a"/><stop offset=".55" class="sky-b"/><stop offset="1" class="sky-c"/></linearGradient>
 <mask id="crescent"><circle cx="300" cy="110" r="34" fill="#fff"/><circle cx="314" cy="100" r="31" class="moon-cut" fill="#000"/></mask>
